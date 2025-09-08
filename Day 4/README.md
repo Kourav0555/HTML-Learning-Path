@@ -12,7 +12,6 @@ Today I have explored more HTML tags and elements, so here’s what I have learn
 - **`<sup>` Element** – Displays text as superscript (e.g., X<sup>2</sup>).
 
 # Inshort
-
  * Inline elements do not start on a new line.
  * Block elements always take up the full width.
  * <span> is great for styling parts of text.
