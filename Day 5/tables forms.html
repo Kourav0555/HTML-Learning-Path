@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Day 5 — HTML: Tables, Forms & Inputs (Examples)</title>
+</head>
+<body>
+  <h1>Day 5 — HTML Examples: Tables, Forms & Inputs</h1>
+
+  <h2>1. Table — colspan & rowspan</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <thead>
+      <tr>
+        <th rowspan="2">S.No</th>
+        <th colspan="2">Student</th>
+        <th rowspan="2">Grade</th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Roll No</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Priya Kourav</td>
+        <td>101</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Rahul Verma</td>
+        <td>102</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td rowspan="2">3</td>
+        <td>Group Project</td>
+        <td>—</td>
+        <td rowspan="2">A-</td>
+      </tr>
+      <tr>
+        <td colspan="2">Team:Team Vision (4 members)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>2. Forms & Inputs</h2>
+  <form>
+    <fieldset>
+      <legend><strong>Student Registration</strong></legend>
+
+      <label for="fullName">Full name:</label><br>
+      <input id="fullName" name="fullName" type="text" placeholder="Yours Full Name"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input id="email" name="email" type="email" placeholder="example@domain.com"><br><br>
+
+      <label for="phone">Phone:</label><br>
+      <input id="phone" name="phone" type="tel" placeholder="+91-XXXXXXXXXX"><br><br>
+
+      <label for="dob">Date of birth:</label><br>
+      <input id="dob" name="dob" type="date"><br><br>
+
+      <label for="batch">Batch:</label><br>
+      <select id="batch" name="batch">
+        <option value="">-- Select batch --</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+      </select><br><br>
+
+      <label for="cgpa">CGPA:</label><br>
+      <input id="cgpa" name="cgpa" type="number" placeholder="7.50"><br><br>
+
+      <label>Interests (checkbox):</label><br>
+      <input type="checkbox" name="interest" value="web"> Web Development<br>
+      <input type="checkbox" name="interest" value="ml"> Machine Learning<br>
+      <input type="checkbox" name="interest" value="app"> Mobile Apps<br><br>
+
+      <label>Preferred role (radio):</label><br>
+      <input type="radio" name="role" value="frontend"> Frontend<br>
+      <input type="radio" name="role" value="backend"> Backend<br>
+      <input type="radio" name="role" value="fullstack"> Fullstack<br><br>
+
+      <label for="experience">Experience (range):</label><br>
+      <input id="experience" name="experience" type="range" min="0" max="10" value="2"><br><br>
+
+      <label for="portfolio">Portfolio URL:</label><br>
+      <input id="portfolio" name="portfolio" type="url" placeholder="https://example.com"><br><br>
+
+      <label for="about">About you (textarea):</label><br>
+      <textarea id="about" name="about" rows="4" cols="40"></textarea><br><br>
+
+      <label for="file">Upload Resume:</label><br>
+      <input id="file" name="resume" type="file"><br><br>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+</body>
+</html>
